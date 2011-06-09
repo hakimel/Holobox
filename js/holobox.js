@@ -70,9 +70,9 @@ var Holobox = (function(){
 		updateOrientation();
 		
 		event.preventDefault();
-    }
+	}
 	
-    function onMotionChange( event ) {
+	function onMotionChange( event ) {
 		var beta = orientation === 1 ? -event.accelerationIncludingGravity.z : -event.accelerationIncludingGravity.z;
 		var gamma = orientation === 1 ? -event.accelerationIncludingGravity.y : -event.accelerationIncludingGravity.x;
 		
@@ -80,7 +80,7 @@ var Holobox = (function(){
 		perspective.ty = ( ( beta / 5 ) - 0.5 ) * 100;
 		
 		event.preventDefault();
-    }
+	}
 	
 	function updateOrientation() {
 		// Check if we're in portrait or landscape mode as we'll need
