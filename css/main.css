@@ -19,6 +19,42 @@ html, body {
 
 
 /*********************************************
+ * EXPERIMENTS HEADER
+ *********************************************/
+
+a {
+	color: rgb(220,200,150);
+}
+
+header {
+	position: absolute;
+	padding: 10px 0;
+	z-index: 999;
+	
+	height: 20px;
+	width: 100%;
+	
+	background: rgba(255,255,255,0.4);
+}
+
+header>div {
+	float: right;
+	margin-right: 10px;
+}
+
+header div.facebook-button {
+	top: 1px;
+}
+
+header a {
+	float: left;
+	font-size: 14px;
+	color: #666;
+	margin-left: 10px;
+}
+
+
+/*********************************************
  * BOX CONTENTS
  *********************************************/
 

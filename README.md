@@ -8,4 +8,4 @@ Curious about how this looks in action? [Check out the demo page.](http://hakim.
 
 MIT licensed
 
-Copyright (C) 2011 Hakim El Hattab, http://hakim.se
+Copyright (C) 2017 Hakim El Hattab, http://hakim.se

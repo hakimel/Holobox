@@ -1,20 +1,32 @@
-<!doctype html>  
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		
+
 		<title>Holobox</title>
-		
+
 		<!-- This viewport is baaad practice. Look away. -->
 		<meta name="viewport" content="width=700, initial-scale=0.3">
-		
+
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/main.css">
-		
-		<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
-		
+
+		<link href='https://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+
 	<body>
-		
+
+		<header>
+			<a href="http://hakim.se/experiments/css3-hologram">About this experiment</a>
+
+			<div class="facebook-button" style="margin-right: 110px;">
+				<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhakim.se%2Fexperiments%2Fcss3-hologram&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+			</div>
+
+			<div class="tweet-button">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-text="Holobox - A CSS3 3D cube that adapts to device orientation. Created by @hakimel." data-url="http://lab.hakim.se/hologram" data-count="horizontal" data-related="hakimel"></a>
+			</div>
+		</header>
+
 		<div id="world">
 			<div id="room">
 				<!-- The back wall which holds our content -->
@@ -27,22 +39,39 @@
 						Requires webkit on a mobile device, such as iPhone.
 					</p>
 				</div>
-				
+
 				<!-- The translucent front wall -->
 				<div id="front"></div>
-				
+
 				<!-- The remaining walls of the box -->
 				<div id="wall-left"></div>
 				<div id="wall-right"></div>
 				<div id="wall-top"></div>
 				<div id="wall-bottom"></div>
-				
+
 				<!-- A plane below the box which is used to simulate a shadow -->
 				<div id="shadow"></div>
 			</div>
 		</div>
-			
+
 		<script src="js/holobox.js"></script>
-		
+
+		<!-- Analytics & other unrelated bits below -->
+
+		<a href="https://github.com/hakimel/Holobox"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1000;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+
+		<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+
+		<script>
+		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+		(function(d, t) {
+		var g = d.createElement(t),
+		    s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+		</script>
+
 	</body>
 </html>
